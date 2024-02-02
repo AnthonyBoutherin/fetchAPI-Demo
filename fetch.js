@@ -1,6 +1,12 @@
+// ! Doc Fetch
+// * Source : https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch
+console.log("Démo d'utilisation de Fetch");
+console.log("Source : https://developer.mozilla.org/fr/docs/Web/API/Fetch_API/Using_Fetch");
+console.log("Git: https://github.com/AnthonyBoutherin/fetchAPI-Demo");
+
 document.addEventListener("DOMContentLoaded", async function () {
   /**
-   * Charge la liste des pays depuis une API.
+   * Charge la liste des pays depuis une API
    * @returns {array} la liste des pays
    */
   async function getCountries() {
@@ -39,8 +45,6 @@ document.addEventListener("DOMContentLoaded", async function () {
     countriesToLoad.forEach((element) => {
       const countryName = element.name;
       const countryFlag = element.flag;
-      console.log(countryName);
-      console.log(countryFlag);
 
       const li = document.createElement("li");
       const span = document.createElement("span");
